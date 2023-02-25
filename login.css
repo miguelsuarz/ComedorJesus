@@ -1,0 +1,23 @@
+  body {
+    background-image: url('https://www.example.com/background.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  .form {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  .form-group label {
+    font-weight: bold;
+  }
+  .btn-primary {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+  }
+  .btn-primary:hover {
+    background-color: #3e8e41;
+    border-color: #3e8e41;
+  }
