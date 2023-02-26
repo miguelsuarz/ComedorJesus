@@ -1,0 +1,22 @@
+body {
+    
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  .form {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  table {
+    margin: auto; /* Centra la tabla horizontalmente */
+    text-align: center; /* Centra el texto dentro de las celdas */
+  }
+  
+  th,
+  td {
+    text-align: center; /* Centra el texto dentro de las celdas */
+  }
+  

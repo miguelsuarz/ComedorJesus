@@ -10,6 +10,7 @@
 </head>
 
 <body>
+	<?php include ('conexion.php');?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
@@ -37,38 +38,34 @@
 
 			</div>
 		</div>
+		<table>
+			<tr>
+				<th>Nombre </th>
+				<th>Apellido </th>
+				<th>Edad </th>
+			</tr>
+			<?php 
+			$sql="select * from alumnos";
+			$resultado=mysqli_query($conexion,$sql);
+
+			while($mostrar=mysqli_fetch_array($resultado))
+			{
+			?>
+			<td><?php echo $mostrar ['nombre']?></td>
+			<td><?php echo $mostrar ['dni']?></td>
+			<td><?php echo $mostrar ['curso']?></td>
+
+
+			<?php
+			}
+			?>
+			
+			<?php endwhile; ?>
+		</table>
 	</div>
 	<!-- Agregar el enlace al archivo JavaScript de Bootstrap -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script>
-		function mostrarAlumnos() {
-			var cursoSeleccionado = document.getElementById("curso").value;
-			var listaAlumnos = document.getElementById("lista-alumnos");
 
-			// Borramos la lista anterior de alumnos
-			listaAlumnos.innerHTML = "";
-
-			if (cursoSeleccionado === "3INF") {
-				var alumnos = ["Alumno 1", "Alumno 2", "Alumno 3"];
-			} else if (cursoSeleccionado === "4INF") {
-				var alumnos = ["Alumno 4", "Alumno 5", "Alumno 6"];
-			} else if (cursoSeleccionado === "5INF") {
-				var alumnos = ["Alumno 7", "Alumno 8", "Alumno 9"];
-			}
-
-			// Creamos la lista de alumnos
-			var lista = document.createElement("ul");
-			for (var i = 0; i < alumnos.length; i++) {
-				var alumno = alumnos[i];
-				var item = document.createElement("li");
-				item.textContent = alumno;
-				lista.appendChild(item);
-			}
-
-			// Añadimos la lista de alumnos al div correspondiente
-			listaAlumnos.appendChild(lista);
-		}
-	</script>
 </body>
 
 </html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen</title>
+    <link rel="stylesheet" href="principal.css">
+
+    <!-- Enlaces a Bootstrap CSS y JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+		<form class="form">
+			<form>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="fecha-desde">Fecha desde:</label>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <input type="date" class="form-control" id="fecha-desde">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="fecha-hasta">Fecha hasta:</label>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <input type="date" class="form-control" id="fecha-hasta">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Filtrar</button>
+
+            </form>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Mesa</th>
+                        <th>Asistencia total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mesa 1</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Mesa 2</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Mesa 3</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Mesa 4</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Clase</th>
+                        <th>Asistenca total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3INF</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>4INF</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>5INF</td>
+                        <td>11</td>
+                    </tr>
+                    <!-- Aquí van el resto de las clases -->
+                </tbody>
+            </table>
+            <div class="btn-group" role="group" aria-label="Visualización de totales">
+                <button type="button" class="btn btn-primary">Diarios</button>
+                <button type="button" class="btn btn-primary">Mensuales</button>
+            </div>
+            
+		</form>
+
+	</div>
+    
+</body>
+
+</html>

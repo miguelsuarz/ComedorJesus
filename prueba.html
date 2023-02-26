@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lista de asistencia</title>
+	<link rel="stylesheet" href="principal.css">
+
+	<!-- Enlaces a Bootstrap CSS y JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- Enlace al CSS de Datepicker -->
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+	<!-- Enlace al JS de Datepicker -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+</head>
+
+<body>
+
+
+	<div class="container">
+
+
+		<form class="form">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="form-group">
+						<label for="fecha-desde">Fecha desde:</label>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="form-group">
+						<input type="date" class="form-control" id="fecha-desde">
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-md-3">
+					<div class="form-group">
+						<label for="curso">Curso:</label>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="form-group">
+						<select class="form-control" id="curso">
+							<option>Selecciona un curso</option>
+							<option>3INF</option>
+							<option>4INF</option>
+							<option>5INF</option>
+						</select>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Nombre</th>
+								<th>Curso</th>
+								<th>Mesa</th>
+								<th>Asistencia</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>María García</td>
+								<td>1INF</td>
+								<td>6</td>
+								<td>
+									<div class="form-check form-switch">
+										<input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+									</div>
+								</td>
+								<td>
+									<button type="button" class="btn btn-primary" data-toggle="modal"
+										data-target="#editar-alumno-modal">Editar</button>
+									<button type="button" class="btn btn-danger" data-toggle="modal"
+										data-target="#eliminar-alumno-modal">Eliminar</button>
+
+								</td>
+							</tr>
+							<tr>
+								<td>Carlos Ruiz</td>
+								<td>2INF</td>
+								<td>5</td>
+								<td>
+									<div class="form-check form-switch">
+										<input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+									</div>
+								</td>
+								<td>
+									<button type="button" class="btn btn-primary" data-toggle="modal"
+										data-target="#editar-alumno-modal">Editar</button>
+									<button type="button" class="btn btn-danger" data-toggle="modal"
+										data-target="#eliminar-alumno-modal">Eliminar</button>
+
+								</td>
+							</tr>
+							<tr>
+								<td>Raquel Molina</td>
+								<td>3INF</td>
+								<td>1</td>
+								<td>
+									<div class="form-check form-switch">
+										<input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+									</div>
+								</td>
+								<td>
+									<button type="button" class="btn btn-primary" data-toggle="modal"
+										data-target="#editar-alumno-modal">Editar</button>
+									<button type="button" class="btn btn-danger" data-toggle="modal"
+										data-target="#eliminar-alumno-modal">Eliminar</button>
+
+								</td>
+							</tr>
+							<tr>
+								<td>Daniela Sanchez</td>
+								<td>3INF</td>
+								<td>2</td>
+								<td>
+									<div class="form-check form-switch">
+										<input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+									</div>
+								</td>
+								<td>
+									<button type="button" class="btn btn-primary" data-toggle="modal"
+										data-target="#editar-alumno-modal">Editar</button>
+									<button type="button" class="btn btn-danger" data-toggle="modal"
+										data-target="#eliminar-alumno-modal">Eliminar</button>
+
+								</td>
+							</tr>
+							<tr>
+								<td>Mauricio Perez</td>
+								<td>1INF</td>
+								<td>4</td>
+								<td>
+									<div class="form-check form-switch">
+										<input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+									</div>
+								</td>
+								<td>
+									<button type="button" class="btn btn-primary" data-toggle="modal"
+										data-target="#editar-alumno-modal">Editar</button>
+									<button type="button" class="btn btn-danger" data-toggle="modal"
+										data-target="#eliminar-alumno-modal">Eliminar</button>
+
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>
+								</td>
+								<td>
+									<a href="resumen.html">Resumen</a>
+								</td>
+							</tr>
+
+
+						</tbody>
+					</table>
+				</div>
+
+
+			</div>
+		</form>
+
+	</div>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
